@@ -1,0 +1,45 @@
+@mixin site-button($width, $color, $bgcolor) {
+    display: inline-block;
+    width: $width;
+    padding: 15px 25px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: $color;
+    background-color: $bgcolor;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+
+@mixin txt-formats($Ffamily, $Fsize, $Lheight, $color) {
+    font-family: $Ffamily;
+    font-weight: 400;
+    font-size: $Fsize;
+    line-height: $Lheight;
+    text-align: center;
+    color: $color;
+}
+
+@mixin nav-formats($color) {
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;   
+    color: $color;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+@mixin for-size($size) {
+    @if $size == phone-only {
+        @media (max-width: 785px) { @content; }
+    } @else if $size == tablet-landscape-up {
+        @media (min-width: 786px) { @content; }
+    } @else if $size == desktop-up {
+        @media (min-width: 1200px) { @content; }
+    } 
+}
+

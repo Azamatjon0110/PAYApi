@@ -1,0 +1,35 @@
+
+* {
+    box-sizing: border-box
+}
+
+html{
+    height: 100%;
+}
+
+img {
+    display: block
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+}
+
+.site-main {
+    flex-grow: 1
+}
