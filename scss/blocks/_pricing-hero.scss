@@ -1,13 +1,9 @@
 
+
 @include for-size (phone-only) {
     ol{
-
-        padding: 0;
-        margin: 0;
-
         margin: 0;
         padding: 0;
-
         list-style: none;
     }
     
@@ -87,19 +83,12 @@
                 &:nth-child(1n+4):before{
                     background-image: none;
                 }
-
-            }
-        }
-        
-    }
-
-
                 &:nth-child(1n+4){
                     opacity: 0.5;
                 }
             }
-        
-
+        }
+    }
     
     
     .price__box{
@@ -116,7 +105,6 @@
     }
     
     
-
     .price__item-link{
         @include txt-formats("Public Sans", 16px, 28px, #36536B);
         text-align: left;
@@ -172,8 +160,7 @@
         margin: 0 auto;
         border: none
     }
-
-
+}
 
 @include for-size (tablet-landscape-up) {
 
@@ -395,4 +382,3 @@
     }
 
 }
-
