@@ -1,0 +1,102 @@
+
+@include for-size (phone-only) {
+    .header{
+        padding: 40px 0 52px;
+        background-image: url("../images/Bitmap-header-circle.svg");
+        background-repeat: no-repeat;
+        background-size: 780px 780px;
+        background-position: calc(50% + 269px) calc(50% - 328px);
+    }
+    
+    .sitenav,
+    .header__hamburger-close, 
+    .header__btn{
+        display: none;
+    }
+    
+    .header__left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-link{
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;  
+        color: #36536B;  
+        mix-blend-mode: normal;
+        opacity: 0.7;
+    }
+    
+    
+    .header__hamburger {
+        display: inline-block;
+        width: 28px;
+        height: 17px;
+        margin-left: auto;
+        background-image: url("../images/navbar-hamburger.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@include for-size (tablet-landscape-up) {
+
+    body{
+        background-size: 780px 780px;
+        background-image: url("../images/Bitmap-header-circle.svg");
+        background-position: calc(50% - 1px) calc(50% + 1px);
+        background-repeat: no-repeat;
+    }
+    
+    .header{
+        padding: 40px 0 52px;
+        
+    }
+    
+
+    
+    .sitenav, 
+    .header__btn{
+        display: block;
+    }
+    
+    .header__hamburger,
+    .header__hamburger-close{
+        display: none;
+    }
+    
+    .logo__img{
+        margin-right: 64px;
+    }
+    
+    .header__left,
+    .header__navbar,
+    .sitenav__list{
+        display: flex;
+        align-items: center;
+    }
+    
+    .sitenav__item:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    .sitenav__item:nth-child(3){
+        margin-right: 85px;
+    }
+    
+    .sitenav__link{
+        @include nav-formats(#36536B);
+        opacity: 0.7;
+    }
+    
+    
+    .header__btn{
+        @include site-button(173px, #fff,  #BA4270);
+        margin-left: auto;
+    }
+}
