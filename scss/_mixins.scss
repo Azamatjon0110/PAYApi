@@ -35,9 +35,9 @@
 
 @mixin for-size($size) {
     @if $size == phone-only {
-        @media (max-width: 785px) { @content; }
+        @media (min-width: 320px) { @content; }
     } @else if $size == tablet-landscape-up {
-        @media (min-width: 786px) { @content; }
+        @media (min-width: 768px) { @content; }
     } @else if $size == desktop-up {
         @media (min-width: 1200px) { @content; }
     } 
