@@ -7,19 +7,18 @@
         background-size: 780px 780px;
         background-position: calc(50% + 269px) calc(50% - 328px);
     }
+
+    .header__left{
+        display: flex;
+        align-items: center;
+    }
     
     .sitenav,
     .header__hamburger-close, 
     .header__btn{
         display: none;
     }
-    
-    .header__left{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
+
     .nav-link{
         font-family: 'Public Sans';
         font-style: normal;
@@ -46,23 +45,33 @@
 
 @include for-size (tablet-landscape-up) {
 
+
     body{
         background-size: 780px 780px;
         background-image: url("../images/Bitmap-header-circle.svg");
-        background-position: calc(50% - 1px) calc(50% + 1px);
+        background-position: calc(50% + 455px) calc(50% - 207px);
         background-repeat: no-repeat;
     }
     
     .header{
         padding: 40px 0 52px;
+        background-image: none;
+        
         
     }
     
+    .header__wrap, 
+    .lst{
+        display: flex;
+    }
 
+    .header__navbar{
+        width: 100%;
+    }
     
-    .sitenav, 
-    .header__btn{
-        display: block;
+    .sitenav{
+        display: flex;
+        align-items: center;
     }
     
     .header__hamburger,
@@ -73,14 +82,7 @@
     .logo__img{
         margin-right: 64px;
     }
-    
-    .header__left,
-    .header__navbar,
-    .sitenav__list{
-        display: flex;
-        align-items: center;
-    }
-    
+
     .sitenav__item:not(:last-child){
         margin-right: 40px;
     }
@@ -98,5 +100,30 @@
     .header__btn{
         @include site-button(173px, #fff,  #BA4270);
         margin-left: auto;
+    }
+}
+
+@include for-size (desktop-up) {
+    body{
+        background-position: calc(50% + 455px) calc(50% - 450px);
+    }
+
+    .sitenav__link{
+        transition: all .3s ease;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .header__btn{
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: #DA6D97;
+        }
+
+        &:active{
+            opacity: 0.7;
+        }
     }
 }
