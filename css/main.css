@@ -160,6 +160,8 @@ a {
 }
 @media (max-width: 785px) {
   ol {
+    padding: 0;
+    margin: 0;
     list-style: none;
   }
   .price__box {
@@ -235,7 +237,7 @@ a {
     background-image: url("../images/done.svg");
     content: " ";
   }
-  .price__list:nth-child(1) .price__item::before {
+  .price__box:nth-child(1) .price__item:nth-child(1n+4):before {
     background-image: none;
   }
   .price__item-link {
