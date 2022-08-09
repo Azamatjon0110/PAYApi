@@ -2,7 +2,7 @@
     display: inline-block;
     width: $width;
     padding: 15px 25px;
-    font-family: 'Public Sans';
+    font-family: "Public Sans", "Times New Roman", serif;;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -25,10 +25,10 @@
 }
 
 @mixin nav-formats($color) {
-    font-family: 'Public Sans';
+    font-family: "Public Sans", "Times New Roman", serif;;
     font-weight: 700;
     font-size: 15px;
-    line-height: 18px;   
+    line-height: 18px;
     color: $color;
     mix-blend-mode: normal;
     opacity: 0.7;
@@ -41,6 +41,5 @@
         @media (min-width: 768px) { @content; }
     } @else if $size == desktop-up {
         @media (min-width: 1200px) { @content; }
-    } 
+    }
 }
-
