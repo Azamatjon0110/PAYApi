@@ -1,3 +1,4 @@
+
 @include for-size (phone-only) {
     .footer{
         padding: 40px 0;
@@ -7,17 +8,18 @@
         background-repeat: no-repeat;
         background-position: calc(50% + 4px) calc(50% + 400px);
 
+        
     }
 
     .footer__logo-img{
         margin: 0 auto;
         margin-bottom: 40px;
     }
-
+    
     .footer__list{
         text-align: center;
     }
-
+    
     .footer__item{
         margin-bottom: 31px;
     }
@@ -25,12 +27,12 @@
     .footer__item-link{
         @include nav-formats(#FBFCFE);
     }
-
+    
     .social{
         display: flex;
         justify-content: center;
     }
-
+    
     .social__item{
         margin-right: 24px;
     }
@@ -50,6 +52,8 @@
         padding: 31px 0;
     }
 
+
+
     .footer__box,
     .footer__left,
     .footer__list{
@@ -57,6 +61,10 @@
         align-items: center;
     }
 
+
+
+    
+f
     .footer__item,
     .footer__logo-img{
         margin-bottom: 0;
@@ -80,9 +88,17 @@
     
 
 
+    
+}
+
+@include for-size(desktop-up) {
+
+
     .article__input{
         border: none;
     }
+
+
 
     .footer__item-link{
         transition: all .3s ease;

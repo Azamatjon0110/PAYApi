@@ -2,7 +2,7 @@
     display: inline-block;
     width: $width;
     padding: 15px 25px;
-    font-family: 'Public Sans';
+    font-family: "Public Sans", "Times New Roman", serif;;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -14,6 +14,7 @@
     border-radius: 24px;
 }
 
+
 @mixin txt-formats($Ffamily, $Fsize, $Lheight, $color) {
     font-family: $Ffamily;
     font-weight: 400;
@@ -24,10 +25,10 @@
 }
 
 @mixin nav-formats($color) {
-    font-family: 'Public Sans';
+    font-family: "Public Sans", "Times New Roman", serif;;
     font-weight: 700;
     font-size: 15px;
-    line-height: 18px;   
+    line-height: 18px;
     color: $color;
     mix-blend-mode: normal;
     opacity: 0.7;
@@ -37,9 +38,8 @@
     @if $size == phone-only {
         @media (min-width: 320px) { @content; }
     } @else if $size == tablet-landscape-up {
-        @media (min-width: 786px) { @content; }
+        @media (min-width: 768px) { @content; }
     } @else if $size == desktop-up {
         @media (min-width: 1200px) { @content; }
-    } 
+    }
 }
-
