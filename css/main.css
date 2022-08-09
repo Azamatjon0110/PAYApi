@@ -156,6 +156,8 @@ a {
 }
 @media (max-width: 785px) {
   ol {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
   .price__box {
