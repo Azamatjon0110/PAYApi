@@ -2,7 +2,7 @@
 
 .about-intro {
     padding: 0 0 76px 0;
-    
+
 }
 
 .about-intro__box {
@@ -14,6 +14,7 @@
 .about-intro__topic {
     margin: 0;
     margin-bottom: 40px;
+    font-family: 'DM Serif Display';
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
@@ -41,6 +42,7 @@
 .about-intro__title {
     margin: 0;
     margin-bottom: 16px;
+    font-family: 'DM Serif Display';
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -49,6 +51,7 @@
 }
 
 .about-intro__text {
+    font-family: 'Public Sans';
     margin: 0;
     font-weight: 400;
     font-size: 15px;
@@ -80,6 +83,7 @@
     .about-intro__topic {
         margin: 0;
         margin-bottom: 54px;
+        font-family: 'DM Serif Display';
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
@@ -108,6 +112,7 @@
         width: 30%;
         margin: 0;
         margin-bottom: 16px;
+        font-family: 'DM Serif Display';
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
@@ -118,6 +123,7 @@
     .about-intro__text {
         width: 70%;
         margin: 0;
+        font-family: 'Public Sans';
         font-weight: 400;
         font-size: 15px;
         line-height: 28px;
@@ -186,6 +192,7 @@
     .about-intro__text {
         width: 70%;
         margin: 0;
+        font-family: 'Public Sans';
         font-weight: 400;
         font-size: 15px;
         line-height: 28px;

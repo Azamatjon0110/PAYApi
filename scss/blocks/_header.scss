@@ -11,13 +11,12 @@ body {
 
 .site-header{
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 166px;
     position: relative;
 }
 
-.home--header{
-    padding: 40px 0 166px;
-    background-position:calc(50%) calc(50% - 275px) ;
+.site-body{
+    background-position:calc(50%) calc(50% - 290px) ;
 }
 
 .site-header__wrapper {
@@ -79,6 +78,7 @@ body {
 }
 
 .sitenav__link {
+    font-family: "Public Sans", serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -96,6 +96,7 @@ body {
 
 .site-header__btn {
     padding: 15px 25px;
+    font-family: "Public Sans",'Times New Roman', serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -126,7 +127,9 @@ body {
     height: 100vh;
     margin-left: auto;
     padding: 139px 24px 0 24px;
-    background-color: #1B262F;
+    background-image: url("../../images/menubg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 
@@ -185,8 +188,11 @@ body {
         background-position: calc(50% - -468px) calc(50% + -406px);
     }
 
+    .site-body{
+        background-position:calc(50%) calc(50% - 360px) ;
+    }
+
     .home--header{
-        padding: 40px 0 212px;
         background-position: 50% calc(50% - 262px);
     }
 
@@ -263,7 +269,7 @@ body {
     //  simple
     .site-header {
         padding-top: 40px;
-        padding-bottom: 0;
+        padding-bottom: 212px;
         position: relative;
         background-color: transparent;
     }

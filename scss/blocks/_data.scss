@@ -10,6 +10,9 @@
 
 .data__item:first-child{
   margin-bottom: 50px;
+  & .data__img{
+    margin-right: 30px;
+  }
 }
 
 .data__img{

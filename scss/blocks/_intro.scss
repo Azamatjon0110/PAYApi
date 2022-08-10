@@ -22,11 +22,20 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 16px;
-  padding: 15px 27px;
+  padding: 15px 179px 15px 27px;
   background-color: #FBFCFE;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border: none;
   border-radius: 24px;
+
+  &::placeholder{
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    opacity: 0.5;
+  }
 }
 
 .intro__btn{
@@ -78,6 +87,7 @@
 
   .intro__input{
     width: inherit;
+
   }
 
   .intro__btn{
