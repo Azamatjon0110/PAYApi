@@ -1,0 +1,111 @@
+.connect{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.connect__list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.connect__item{
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+
+  &:not(:last-child){
+    margin-bottom: 48px;
+  }
+
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1)::before{
+    background-image: url("../images/personal-icon.svg");
+  }
+  &:nth-child(2)::before{
+    background-image: url("../images/banking-icon.svg");
+  }
+  &:nth-child(3)::before{
+    background-image: url("../images/consumer.svg");
+  }
+}
+
+.connect__title{
+  @include txt-formats("Public Sans", 15px, 28px, #36536B);
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.connect__text{
+  @include txt-formats("Public Sans", 15px, 28px, #6C8294);
+  margin: 0;
+}
+
+.contact-us{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-us__title{
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+
+.contact-us .intro__form{
+  margin: 0;
+}
+
+@media only screen and (min-width:500px){
+  .connect__title{
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width:768px){
+  .connect__list{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .connect__item:not(:last-child){
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .contact-us__title{
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media only screen and (min-width:1024px){
+
+  .connect__item:not(:last-child){
+    margin-right: 30px;
+  }
+
+  .contact-us{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

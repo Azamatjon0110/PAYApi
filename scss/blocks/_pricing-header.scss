@@ -1,125 +1,167 @@
-@include for-size (phone-only) {
-    .header{
-        padding: 40px 0 52px;
-        background-image: url("../images/Bitmap-header-circle.svg");
-        background-repeat: no-repeat;
-        background-size: 780px 780px;
-        background-position: calc(50% + 269px) calc(50% - 328px);
-    }
+// @include for-size (phone-only) {
+//     .header{
+//         padding: 40px 0 52px;
+//         background-image: url("../images/Bitmap-header-circle.svg");
+//         background-repeat: no-repeat;
+//         background-size: 780px 780px;
+//         background-position: calc(50% + 269px) calc(50% - 328px);
+//     }
 
-    .header__left{
-        display: flex;
-        align-items: center;
-    }
+//     .home--header{
+//         padding: 40px 0 166px;
+//         background-position:calc(50%) calc(50% - 275px) ;
+//     }
 
-    .sitenav,
-    .header__hamburger-close,
-    .header__btn{
-        display: none;
-    }
+//     .header__left{
+//         display: flex;
+//         align-items: center;
+//     }
 
-    .nav-link{
-        font-family: 'Public Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 18px;
-        color: #36536B;
-        mix-blend-mode: normal;
-        opacity: 0.7;
-    }
+//     .sitenav,
+//     .header__hamburger-close,
+//     .header__btn{
+//         display: none;
+//     }
 
-
-    .header__hamburger {
-        display: inline-block;
-        width: 28px;
-        height: 17px;
-        margin-left: auto;
-        background-image: url("../images/navbar-hamburger.svg");
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-    }
-}
-
-@include for-size (tablet-landscape-up) {
+//     .nav-link{
+//         font-family: 'Public Sans';
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 15px;
+//         line-height: 18px;
+//         color: #36536B;
+//         mix-blend-mode: normal;
+//         opacity: 0.7;
+//     }
 
 
-    body{
-        background-size: 780px 780px;
-        background-image: url("../images/Bitmap-header-circle.svg");
-        background-position: calc(50% + 455px) calc(1% - 510px);
-        background-repeat: no-repeat;
-    }
+//     .header__hamburger {
+//         display: inline-block;
+//         width: 28px;
+//         height: 17px;
+//         margin-left: auto;
+//         background-image: url("../images/navbar-hamburger.svg");
+//         background-repeat: no-repeat;
+//         background-color: transparent;
+//         border: none;
+//     }
+// }
 
-    .header{
-        padding: 40px 0 52px;
-        background-image: none;
+// @media only screen and (min-width:660px){
 
+//     .home--header{
+//         padding: 40px 0 184px;
+//         background-position: 50% calc(50% - 262px);
+//     }
+// }
 
-    }
+// @media only screen and (min-width:768px){
+//     .site-body{
+//         background-position: calc(50%) calc(1% - 635px);
+//         background-size: 949px 949px;
+//     }
+// }
 
-    .header__wrap,
-    .lst{
-        display: flex;
-    }
-
-    .header__navbar{
-        width: 100%;
-    }
-
-    .sitenav{
-        display: flex;
-        align-items: center;
-    }
-
-    .header__hamburger,
-    .header__hamburger-close{
-        display: none;
-    }
-
-    .logo__img{
-        margin-right: 64px;
-    }
-
-    .sitenav__item:not(:last-child){
-        margin-right: 40px;
-    }
-
-    .sitenav__item:nth-child(3){
-        margin-right: 85px;
-    }
-
-    .sitenav__link{
-        @include nav-formats(#36536B);
-        opacity: 0.7;
-    }
+// @include for-size (tablet-landscape-up) {
 
 
-    .header__btn{
-        @include site-button(173px, #fff,  #BA4270);
-        margin-left: auto;
-    }
-}
+//     body{
+//         background-size: 780px 780px;
+//         background-image: url("../images/Bitmap-header-circle.svg");
+//         background-position: calc(50% + 455px) calc(50% - 207px);
+//         background-repeat: no-repeat;
+//     }
 
-@include for-size (desktop-up) {
+//     .header{
+//         padding: 40px 0 52px;
+//         background-image: none;
+//     }
 
-    .sitenav__link{
-        transition: all .3s ease;
-        &:hover{
-            opacity: 1;
-        }
-    }
+//     .home--header{
+//         padding: 40px 0 212px;
+//         background-position: 50% calc(50% - 262px);
+//     }
 
-    .header__btn{
-        transition: all .3s ease;
-        cursor: pointer;
-        &:hover{
-            background-color: #DA6D97;
-        }
+//     .header__wrap,
+//     .lst{
+//         display: flex;
+//     }
 
-        &:active{
-            opacity: 0.7;
-        }
-    }
-}
+//     .header__navbar{
+//         width: 100%;
+//     }
+
+//     .sitenav{
+//         display: flex;
+//         align-items: center;
+//     }
+
+//     .header__hamburger,
+//     .header__hamburger-close{
+//         display: none;
+//     }
+
+//     .logo__img{
+//         margin-right: 64px;
+//     }
+
+//     .sitenav__item:not(:last-child){
+//         margin-right: 40px;
+//     }
+
+//     .sitenav__item:nth-child(3){
+//         margin-right: 85px;
+//     }
+
+//     .sitenav__link{
+//         @include nav-formats(#36536B);
+//         opacity: 0.7;
+//     }
+
+
+//     .header__btn{
+//         @include site-button(173px, #fff,  #BA4270);
+//         margin-left: auto;
+//     }
+// }
+
+// @media only screen and (min-width:912px){
+
+//     .site-body{
+//         background-size: 780px 834px;
+//         background-image: url("../images/body-bg-ds.svg");
+//         background-position: calc(50% + 455px) calc(1% - 150px);
+//         background-repeat: no-repeat;
+//     }
+
+//     .home--header{
+//         padding: 40px 0 52px;
+//     }
+// }
+
+
+// @include for-size (desktop-up) {
+//     body{
+//         background-position: calc(50% + 455px) calc(50% - 450px);
+//         background-image: none;
+//     }
+
+//     .sitenav__link{
+//         transition: all .3s ease;
+//         &:hover{
+//             opacity: 1;
+//         }
+//     }
+
+//     .header__btn{
+//         transition: all .3s ease;
+//         cursor: pointer;
+//         &:hover{
+//             background-color: #DA6D97;
+//         }
+
+//         &:active{
+//             opacity: 0.7;
+//         }
+//     }
+// }

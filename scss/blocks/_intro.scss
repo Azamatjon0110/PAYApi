@@ -50,19 +50,15 @@
 
 .intro__phone{
   position: absolute;
-  width: 300px;
-  height: 393px;
-  top: -172px;
+  width: 275px;
+  height: 380px;
+  top: -165px;
   right: -47px;
   left: 0;
   margin: 0 auto;
 }
 
-@media only screen and (min-width:650px){
-  .home--header{
-    padding: 40px 0 184px;
-    background-position: 50% calc(50% - 262px);
-  }
+@media only screen and (min-width:660px){
 
   .intro__info{
     max-width: 573px;
@@ -95,12 +91,19 @@
   }
 
   .intro__phone{
+    top:-190px;
     width: 335px;
     height: 455px;
   }
 }
 
 @media only screen and (min-width:912px){
+
+  .intro{
+    padding-top: 95px;
+    padding-bottom: 152px;
+  }
+
   .intro__box{
     display: flex;
     align-items: center;
@@ -113,9 +116,15 @@
   }
 
   .intro__title{
+    margin: 0;
+    margin-bottom: 21px;
     font-size: 60px;
     line-height: 68px;
     text-align: left;
+  }
+
+  .intro__form{
+    margin: 0;
   }
 
   .intro__btn{
@@ -124,5 +133,24 @@
 
   .intro__con-text{
     margin-left: 27px;
+  }
+
+  .intro__phone{
+    display: none;
+  }
+
+  .intro__bg{
+    position: relative;
+    &::before{
+      position: absolute;
+      display: block;
+      right: 0;
+      left: 0;
+      width: 780px;
+      height: 834px;
+      margin: 0 auto;
+      background-image: url("../images/body-bg-ds.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
