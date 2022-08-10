@@ -1,0 +1,279 @@
+
+@include for-size (phone-only) {
+
+    .contact__form{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .contact__title-box{
+        width: 100%;
+        max-width: 368px;
+        margin: 0 auto;
+    }
+
+    .contact__title{
+        margin-bottom: 48px;
+        @include txt-formats('DM Serif Display', 32px, 36px,  #36536B);
+        text-align: center;
+    }
+
+
+
+    .contact__label{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+    }
+
+    .contact__input{
+        width: 100%;
+        max-width: 445px;
+        padding: 16px 20px;
+        @include txt-formats( 'Public Sans', 15px, 25px,  #36536b);
+        background-color: transparent;
+        text-align: left;
+        border: none;
+        outline: none;
+        opacity: .5;
+        border-bottom: 1px solid #36536b;
+    }
+
+    input:focus{
+        opacity: 1;
+        border-bottom: 1px solid #36536b;
+    }
+
+    input:not(:placeholder-shown):not(:active){
+        opacity: 1;
+    }
+
+    input:not(:placeholder-shown):not(:focus):invalid{
+        color: #FF0000;
+        border-bottom: 1px solid #FF0000;
+    }
+
+    textarea{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        padding: 16px 20px;
+        @include txt-formats( 'Public Sans', 15px, 25px,  #36536b);
+        text-align: left;
+        opacity: .5;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid #36536b;
+        resize: none;
+    }
+
+    textarea:focus{
+        opacity: 1;
+    }
+
+    .contact__span{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+    .contact__checkbox{
+        opacity: 0;
+    }
+
+    .contact__labell{
+        position: relative;
+        width: 100%;
+        max-width: 395px;
+        margin-left: 49px;
+        @include txt-formats( 'Public Sans', 15px, 25px,  #36536b);
+        text-align: left;
+    }
+
+
+    .contact__checkbox{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;;
+    }
+
+    .checkmark{
+        position: absolute;
+        top: 13px;
+        left: -45px;
+        height: 25px;
+        width: 25px;
+        background-color: #e7dbdb;
+        transition: all .3s ease;
+    }
+
+    .contact__labell{
+        &:hover{
+            .contact__checkbox ~ .checkmark{
+                background-color: #ccc;
+            }
+        }
+    }
+
+    .contact__labell{
+        .contact__checkbox:checked~.checkmark{
+            background-color: #BA4270;
+        }
+    }
+
+    .checkmark{
+        &::after{
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+
+    .contact__checkbox:checked ~ .checkmark{
+        &::after{
+            display: block;
+
+        }
+    }
+
+    .contact__labell{
+        .checkmark{
+            &::after{
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid #fff;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    .contact__button{
+        @include site-button(152px, #36536B, transparent);
+        border: 1px solid #36536B;
+        box-shadow:none;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+            color:  #FBFCFE;
+            background-color: #36536B;
+        }
+
+    }
+
+    .innovators{
+        padding-top: 80px;
+    }
+
+    .innovators__txt-box{
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+
+    }
+
+    .innovators__title{
+        margin-bottom: 37px;
+        @include txt-formats("DM Serif Display", 24px, 32px,  #36536B);
+        opacity: .75;
+    }
+
+    .innovators__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 541px;
+        margin: 0 auto;
+        margin-bottom: 82px;
+    }
+
+    .innovators__item{
+        margin-right: 14px;
+        margin-bottom: 44px;
+    }
+
+    @media only screen and (min-width: 390px) {
+        .innovators__item{
+            margin-right: 49px;
+        }
+    }
+
+    .innovators__img{
+        display: none;
+    }
+
+    .article{
+        padding-top: 0;
+    }
+}
+
+@include for-size (tablet-landscape-up) {
+
+    .contact__title-box{
+        max-width: 540px;
+    }
+
+    .contact__title{
+        margin-bottom: 54px;
+        @include txt-formats('DM Serif Display', 48px, 56px,  #36536B);
+        text-align: center;
+    }
+}
+
+@include for-size(desktop-up) {
+
+    .contact{
+        padding-bottom: 96px;
+    }
+
+    .contact__main-box{
+        display: flex;
+        align-items: center;
+        margin-bottom: 93px;
+    }
+
+    .contact__title-box{
+        max-width: 730px;
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .contact__title{
+        margin-bottom: 43px;
+        @include txt-formats('DM Serif Display', 56px, 56px,  #36536B);
+        text-align: left;
+    }
+
+    .contact__form{
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .innovators__txt-box{
+        max-width: 540px;
+        padding-top: 65px;
+    }
+
+    .innovators__title{
+        text-align: left;
+    }
+
+    .article{
+        padding: 0;
+    }
+
+}

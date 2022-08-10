@@ -1,73 +1,21 @@
-<<<<<<< HEAD
-
-// @include for-size (phone-only) {
-//     .header{
-//         padding: 40px 0 52px;
-//         background-image: url("../images/Bitmap-header-circle.svg");
-//         background-repeat: no-repeat;
-//         background-size: 780px 780px;
-//         background-position: calc(50% + 269px) calc(50% - 328px);
-//     }
-    
-//     .sitenav,
-//     .header__hamburger-close, 
-//     .header__btn{
-//         display: none;
-//     }
-    
-//     .header__left{
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-    
-//     .nav-link{
-//         font-family: 'Public Sans';
-//         font-style: normal;
-//         font-weight: 700;
-//         font-size: 15px;
-//         line-height: 18px;  
-//         color: #36536B;  
-//         mix-blend-mode: normal;
-//         opacity: 0.7;
-//     }
-    
-    
-//     .header__hamburger {
-//         display: inline-block;
-//         width: 28px;
-//         height: 17px;
-//         margin-left: auto;
-//         background-image: url("../images/navbar-hamburger.svg");
-//         background-repeat: no-repeat;
-//         background-color: transparent;
-//         border: none;
-//     }
-// }
-=======
 @include for-size (phone-only) {
-    body{
-        border-image: none;
-        overflow-x: hidden;
-    }
     .header{
         padding: 40px 0 52px;
-        background-image: url("../images/header-bg.svg");
+        background-image: url("../images/Bitmap-header-circle.svg");
         background-repeat: no-repeat;
         background-size: 780px 780px;
         background-position: calc(50% + 269px) calc(50% - 328px);
+    }
+
+    .header__left{
+        display: flex;
+        align-items: center;
     }
 
     .sitenav,
     .header__hamburger-close,
     .header__btn{
         display: none;
-    }
-
-    .header__left{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .nav-link{
@@ -93,83 +41,36 @@
         border: none;
     }
 }
->>>>>>> e95b24bcb8dadc72666efbbd20f1011a494b2d4f
 
-// @include for-size (tablet-landscape-up) {
+@include for-size (tablet-landscape-up) {
 
-<<<<<<< HEAD
-//     body{
-//         background-size: 780px 780px;
-//         background-image: url("../images/Bitmap-header-circle.svg");
-//         background-position: calc(50% - 1px) calc(50% + 1px);
-//         background-repeat: no-repeat;
-//     }
-    
-//     .header{
-//         padding: 40px 0 52px;
-        
-//     }
-    
 
-    
-//     .sitenav, 
-//     .header__btn{
-//         display: block;
-//     }
-    
-//     .header__hamburger,
-//     .header__hamburger-close{
-//         display: none;
-//     }
-    
-//     .logo__img{
-//         margin-right: 64px;
-//     }
-    
-//     .header__left,
-//     .header__navbar,
-//     .sitenav__list{
-//         display: flex;
-//         align-items: center;
-//     }
-    
-//     .sitenav__item:not(:last-child){
-//         margin-right: 40px;
-//     }
-    
-//     .sitenav__item:nth-child(3){
-//         margin-right: 85px;
-//     }
-    
-//     .sitenav__link{
-//         @include nav-formats(#36536B);
-//         opacity: 0.7;
-//     }
-    
-    
-//     .header__btn{
-//         @include site-button(173px, #fff,  #BA4270);
-//         margin-left: auto;
-//     }
-// }
-=======
     body{
         background-size: 780px 780px;
         background-image: url("../images/Bitmap-header-circle.svg");
-        background-position: calc(50% - 1px) calc(50% + 1px);
+        background-position: calc(50% + 455px) calc(1% - 510px);
         background-repeat: no-repeat;
     }
 
     .header{
         padding: 40px 0 52px;
+        background-image: none;
+
 
     }
 
+    .header__wrap,
+    .lst{
+        display: flex;
+    }
 
+    .header__navbar{
+        width: 100%;
+    }
 
-    .sitenav,
-    .header__btn{
-        display: block;
+    .sitenav{
+        display: flex;
+        align-items: center;
     }
 
     .header__hamburger,
@@ -179,13 +80,6 @@
 
     .logo__img{
         margin-right: 64px;
-    }
-
-    .header__left,
-    .header__navbar,
-    .sitenav__list{
-        display: flex;
-        align-items: center;
     }
 
     .sitenav__item:not(:last-child){
@@ -207,4 +101,25 @@
         margin-left: auto;
     }
 }
->>>>>>> e95b24bcb8dadc72666efbbd20f1011a494b2d4f
+
+@include for-size (desktop-up) {
+
+    .sitenav__link{
+        transition: all .3s ease;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .header__btn{
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: #DA6D97;
+        }
+
+        &:active{
+            opacity: 0.7;
+        }
+    }
+}
