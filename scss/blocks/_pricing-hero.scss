@@ -1,9 +1,5 @@
-
-
 @include for-size (phone-only) {
     ol{
-        margin: 0;
-        padding: 0;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -78,81 +74,307 @@
         }
     }
 
-    .price__list:nth-child(1) .price__item::before{
-        background-image: none;
-    }
 
-        // .price__list{
-    //     &:nth-child(1){
-    //         .price__item{
-    //             &::before{
-    //                 background-image: none;
-    //             }
-    //         }
-    //     }
-    // }
-
-
-    // .price__item:nth-child(4){
-        //     &::before{
-
-            //     }
-            // }
-
-
-            .price__item-link{
-                @include txt-formats("Public Sans", 16px, 28px, #36536B);
-                text-align: left;
-            }
-
-            .price__button{
-
-                @include site-button(168px, #36536B, transparent);
-                display: block;
-                margin: 0 auto;
-                border: 1px solid #36536B;
-                box-shadow: none;
-
-            }
-
-            .article{
-                padding: 80px 0;
-            }
-
-            .article__title{
-                margin-bottom: 32px;
-                @include txt-formats('DM Serif Display', 32px, 36px,  #36536B)
-            }
-
-            .article__label{
-                display: block;
-                width: 100%;
-                max-width: 445px;
-                margin: 0 auto;
-            }
-
-            .article__input{
-                width: 100%;
-                max-width: 445px;
-                margin-bottom: 16px;
-                padding: 16px 25px;
-                font-weight: 700;
-                @include txt-formats('Public Sans', 18px, 18px,  #36536B);
-                text-align: left;
-                background-color:#FBFCFE;
-                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-                border-radius: 24px;
-                border: none;
-
-            }
-
-            .article__btn{
-
-                @include site-button(327px, #fff, #BA4270);
-                display: block;
-                width: 100%;
-                max-width: 445px;
-                margin: 0 auto;
-                border: none
+    .price__box{
+        &:nth-child(1){
+            .price__item{
+                &:nth-child(1n+4):before{
+                    background-image: none;
+                }
+                &:nth-child(1n+4){
+                    opacity: 0.5;
+                }
             }
         }
+    }
+
+
+    .price__box{
+        &:nth-child(2){
+            .price__item{
+                &:nth-child(1n+6):before{
+                    background-image: none;
+                }
+                &:nth-child(1n+6){
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+
+    .price__item-link{
+        @include txt-formats("Public Sans", 16px, 28px, #36536B);
+        text-align: left;
+    }
+
+    .price__button{
+
+        @include site-button(168px, #36536B, transparent);
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #36536B;
+        box-shadow: none;
+
+    }
+
+    .article{
+        padding: 80px 0;
+    }
+
+    .article__title{
+        margin-bottom: 32px;
+        @include txt-formats('DM Serif Display', 32px, 36px,  #36536B)
+    }
+
+    .article__label{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+    }
+
+    .article__input{
+        width: 100%;
+        max-width: 445px;
+        margin-bottom: 16px;
+        padding: 16px 25px;
+        font-weight: 700;
+        @include txt-formats('Public Sans', 18px, 18px,  #36536B);
+        text-align: left;
+        background-color:#FBFCFE;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        border: none;
+
+    }
+
+    .article__btn{
+
+        @include site-button(327px, #fff, #BA4270);
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0 auto;
+        border: none
+    }
+}
+
+@include for-size (tablet-landscape-up) {
+    ol{
+        display: flex;
+    }
+
+    .price__box{
+        width: 100%;
+        max-width: 223px;
+    }
+
+    .price__title{
+        margin-bottom: 69px;
+        @include txt-formats('DM Serif Display', 48px, 56px,  #36536B);
+    }
+
+    .price__heading{
+        margin-top: 0;
+        @include txt-formats('DM Serif Display', 24px, 40px, #BA4270);
+        letter-spacing: -0.184615px;
+    }
+
+    .price__txt{
+        display: block;
+        margin-bottom: 19px;
+        @include txt-formats("Public Sans", 15px, 28px, #36536B);
+        text-align: center;
+    }
+
+    .price__strong{
+        display: block;
+        margin-bottom: 24px;
+        @include txt-formats('DM Serif Display', 48px, 72px, #36536B);
+
+
+    }
+
+    .price__list{
+        width: 223px;
+        margin: 0 auto;
+        &::after{
+            width: 239px;
+            content: " ";
+        }
+    }
+
+
+    .price__item{
+        width: 223px;
+        margin-bottom: 8px;
+    }
+
+
+    .price__item-link{
+        @include txt-formats("Public Sans", 16px, 28px, #36536B);
+        text-align: left;
+    }
+
+
+    .article{
+        padding: 100px 0;
+    }
+
+    .article__title{
+        margin-bottom: 40px;
+        @include txt-formats('DM Serif Display', 48px, 56px,  #36536B)
+    }
+
+    .article__form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .article__label{
+        display: block;
+        width: 100%;
+        max-width: 445px;
+        margin: 0;
+    }
+
+    .article__input{
+        position: relative;
+        padding: 14px 25px;
+        @include txt-formats('Public Sans', 18px, 18px,  #36536B);
+        text-align: left;
+
+    }
+
+    .article__btn{
+        position: absolute;
+        right: calc(50% - 256px);
+        @include site-button(173px, #fff, #BA4270);
+        padding: 16px 25px;
+    }
+
+}
+
+@include for-size(desktop-up) {
+
+
+
+    .price__box{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .price__title{
+        margin-bottom: 72px;
+        @include txt-formats('DM Serif Display', 56px, 56px,  #36536B);
+        text-align: left;
+    }
+
+    .price__heading{
+        margin-top: 0;
+        @include txt-formats('DM Serif Display', 32px, 40px, #BA4270);
+        letter-spacing: -0.184615px;
+        text-align: left;
+    }
+
+    .price__txt{
+        display: block;
+        margin-bottom: 19px;
+        @include txt-formats("Public Sans", 15px, 28px, #36536B);
+        text-align: left;
+    }
+
+    .price__strong{
+        display: block;
+        margin-bottom: 24px;
+        @include txt-formats('DM Serif Display', 56px, 72px, #36536B);
+        text-align: left;
+        &::after{
+            width: 350px;
+            margin: 24px 0;
+        }
+
+    }
+
+    .price__list{
+        width: 223px;
+        margin: 0;
+        &::after{
+            width: 350px;
+            content: " ";
+        }
+    }
+
+
+    .price__item{
+        width: 223px;
+        margin-bottom: 8px;
+    }
+
+
+    .price__item-link{
+        @include txt-formats("Public Sans", 16px, 28px, #36536B);
+        text-align: left;
+    }
+
+    .price__button{
+        margin: 0;
+        transition: all .3s ease;
+        &:hover{
+            color: #fff;
+            background-color: #36536B;
+        }
+
+        &:active{
+            color: #36536B;
+            background-color: #fff;
+            opacity: .5;
+        }
+
+    }
+
+    .article{
+        padding: 96px 0;
+    }
+
+    .article__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .article__title{
+        margin-bottom: 40px;
+        @include txt-formats('DM Serif Display', 48px, 56px,  #36536B)
+    }
+
+    .article__label{
+        display: block;
+        width: 445px;
+        margin: 0;
+    }
+
+    .article__input{
+        outline: none;
+        &:focus{
+            box-shadow: 0 0 2px 0 #808181;
+        }
+    }
+    .article__btn{
+        position: absolute;
+        right: calc(50% - 558px);
+        @include site-button(173px, #fff, #BA4270);
+        padding: 17px 25px;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: #DA6D97;
+        }
+
+        &:active{
+            opacity: 0.7;
+        }
+    }
+
+}
