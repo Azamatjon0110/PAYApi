@@ -186,7 +186,7 @@ body {
     }
 
     .home--header{
-        padding: 40px 0 184px;
+        padding: 40px 0 212px;
         background-position: 50% calc(50% - 262px);
     }
 
@@ -333,6 +333,7 @@ body {
 }
 
 @media only screen and (min-width:768px){
+
     .site-body{
         background-position: calc(50%) calc(1% - 635px);
         background-size: 949px 949px;
